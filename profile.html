@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Puls - Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container profile-container">
+        <div class="profile-level" id="current-level">Novice</div>
+
+        <div class="circle-container">
+            <div class="circle">
+                <div id="total-trainings">0</div>
+            </div>
+        </div>
+
+        <div class="profile-statistics">
+            <p>Total Trainings: <span class="highlight" id="total-trainings-profile">0</span></p>
+            <p>Running Sessions: <span class="highlight" id="running-sessions">0</span></p>
+            <p>Gym Sessions: <span class="highlight" id="gym-sessions">0</span></p>
+            <p>Yoga Sessions: <span class="highlight" id="yoga-sessions">0</span></p>
+            <p>Swimming Sessions: <span class="highlight" id="swimming-sessions">0</span></p>
+            <p>Boxing Sessions: <span class="highlight" id="boxing-sessions">0</span></p>
+            <p>Experience Points to Next Level: <span class="highlight" id="experience-to-next-level">0</span></p>
+        </div>
+    </div>
+
+    <div class="bottom-navigation">
+        <button class="nav-button" id="home-button" onclick="window.location.href='index.html'">
+            <img src="icons/home-icon.svg" alt="Home">
+            Home
+        </button>
+        <button class="nav-button" id="training-button" onclick="window.location.href='training.html'">
+            <img src="icons/training-icon.svg" alt="Training">
+            Training
+        </button>
+        <button class="nav-button" id="earn-button" onclick="window.location.href='earn.html'">
+            <img src="icons/earn-icon.svg" alt="Earn">
+            Earn
+        </button>
+        <button class="nav-button" id="profile-button" onclick="window.location.href='profile.html'">
+            <img src="icons/profile-icon.svg" alt="Profile">
+            Profile
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

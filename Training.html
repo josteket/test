@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Puls - Тренировки</title>
+    <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-whatever-valid-integrity" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Верхняя панель -->
+        <div class="top-bar">
+            <div class="training-status">
+                <span id="available-trainings">3/3</span>
+            </div>
+            <div class="boost">
+                <button id="boost-button" onclick="window.location.href='earn.html'">BOOST</button>
+            </div>
+        </div>
+
+        <!-- Заголовок страницы тренировок -->
+        <div class="training-header">
+            <h2>Выберите тренировку:</h2>
+        </div>
+
+        <!-- Секция выбора тренировок -->
+        <div class="training-options text-center">
+            <button class="training-button" data-training="running">
+                <img src="icons/running-icon.svg" alt="Running" class="training-icon"> Running
+            </button>
+            <button class="training-button" data-training="gym">
+                <img src="icons/gym-icon.svg" alt="Gym" class="training-icon"> Gym
+            </button>
+            <button class="training-button" data-training="yoga">
+                <img src="icons/yoga-icon.svg" alt="Yoga" class="training-icon"> Yoga
+            </button>
+            <button class="training-button" data-training="swimming">
+                <img src="icons/swimming-icon.svg" alt="Swimming" class="training-icon"> Swimming
+            </button>
+            <button class="training-button" data-training="boxing">
+                <img src="icons/boxing-icon.svg" alt="Boxing" class="training-icon"> Boxing
+            </button>
+        </div>
+    </div>
+
+    <!-- Нижняя навигация -->
+    <div class="bottom-navigation">
+        <button class="nav-button" id="home-button" onclick="window.location.href='index.html'">
+            <img src="icons/home-icon.svg" alt="Home">
+            <span>Home</span>
+        </button>
+        <button class="nav-button" id="training-button" onclick="window.location.href='training.html'">
+            <img src="icons/training-icon.svg" alt="Training">
+            <span>Training</span>
+        </button>
+        <button class="nav-button" id="earn-button" onclick="window.location.href='earn.html'">
+            <img src="icons/earn-icon.svg" alt="Earn">
+            <span>Earn</span>
+        </button>
+        <button class="nav-button" id="profile-button" onclick="window.location.href='profile.html'">
+            <img src="icons/profile-icon.svg" alt="Profile">
+            <span>Profile</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
